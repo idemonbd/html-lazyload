@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- <img src="https://wallpapercave.com/wp/GMXAd6G.jpg" alt=""> -->
+
+
+    <img data-url="https://wallpapercave.com/wp/GMXAd6G.jpg"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        (function () {
+            $('img').each(function () {
+                let url = $(this).data('url');
+                $(this).attr('src', url);
+            });
+        })();
+
+    </script>
+
+</body>
+
+</html>
